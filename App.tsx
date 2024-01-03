@@ -1,17 +1,15 @@
+import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import "react-native-gesture-handler";
-
 import { COLORS } from "./utils/colors";
 import LatestUplodesScreen from "./screens/LatestUplodesScreen";
-import { SIZES } from "./utils/sizes";
 
 const Stack = createNativeStackNavigator();
-// const Drawer = createDrawerNavigator();
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
